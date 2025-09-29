@@ -1,0 +1,1597 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Fredoka", sans-serif;
+}
+.fred {
+  font-family: "Fredoka", sans-serif;
+}
+body {
+  /*background: linear-gradient(
+    to top right,
+    #1be7ee,
+    rgb(86, 221, 169),
+    rgb(196, 219, 214)
+  );*/
+  background-color: rgb(245, 245, 245);
+}
+
+/* Header*/
+.headertop {
+  /*background-color: rgb(158, 255, 206);*/
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+.leftcon {
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 18px;
+}
+.topother {
+  display: flex;
+}
+.rightcon {
+  position: absolute;
+  right: 0;
+  display: flex;
+  font-weight: 600;
+  font-size: 18px;
+  align-items: center;
+  align-content: center;
+}
+.rightcon .icon1 {
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.rightcon .icon2 {
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.rightcon .icon1:hover {
+  background-color: #83ffe4;
+  font-size: 24px;
+  transition: 300ms;
+}
+.rightcon .icon2:hover {
+  background-color: #83ffe4;
+  font-size: 24px;
+  transition: 300ms;
+}
+.tophedCon {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.signupBtn {
+  background-color: rgb(4, 252, 169);
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.selBtn {
+  background-color: rgb(117, 253, 208);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  margin-right: -10px;
+}
+.selBtn:hover {
+  background-color: rgb(0, 255, 170);
+}
+.addBtn {
+  background-color: rgb(247, 231, 160);
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 10px 0 0 10px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.sellBtnNew {
+  background-color: rgb(117, 253, 208);
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 10px 0 0 10px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.sellBtnNew:hover {
+  background-color: rgb(0, 255, 170);
+}
+.addBtn:hover {
+  background-color: rgb(247, 223, 116);
+}
+
+.directoryBox {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+.directoryDropSell {
+  width: 40px;
+  background-color: rgb(117, 253, 208);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 45px;
+  border-radius: 0 10px 10px 0px;
+  cursor: pointer;
+  margin-left: -20px;
+}
+.directoryDropSell:hover {
+  background-color: rgb(0, 255, 170);
+}
+.directoryDrop {
+  width: 40px;
+  background-color: rgb(247, 231, 160);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 45px;
+  border-radius: 0 10px 10px 0px;
+  cursor: pointer;
+  margin-left: -20px;
+}
+.directoryDrop:hover {
+  background-color: rgb(247, 223, 116);
+}
+
+.profilebox {
+  display: flex;
+  /*background-color: rgb(4, 252, 169);*/
+  background-color: rgb(5, 255, 172);
+  margin-right: 10px;
+  border-radius: 30px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.profilebox:hover {
+  background-color: rgb(15, 240, 165);
+}
+.profile img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 40px;
+  width: 40px;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+}
+
+.profilenm {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+/*menu popup*/
+.popback {
+  position: absolute;
+  width: 360px;
+  padding: 10px;
+  z-index: 10;
+  right: 10px;
+  top: 70px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 480px) {
+  .popback {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 70px;
+    left: 0px;
+    overflow: hidden;
+    pointer-events: none;
+  }
+}
+
+.eventson {
+  pointer-events: all;
+}
+.eventsoff {
+  pointer-events: none;
+}
+/*
+  .menupop{
+    position: relative;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  }*/
+.menupop {
+  position: relative;
+  transform: translateY(-300px);
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+.menuclose {
+  transform: translateY(-300px);
+  transition: 250ms;
+}
+.menuanimate {
+  transform: translateY(0);
+  transition: 250ms;
+}
+.menuprofile {
+  height: 85px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: 1px;
+  border-color: #d1d1d1;
+  pointer-events: none;
+}
+
+.menuimg {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  border-radius: 50%;
+}
+.menuimg img {
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.menuNm {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.menuNm .email {
+  font-size: 14px;
+}
+.menuNm .name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menuAccSet {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.menuAccSet:hover {
+  background-color: #ebebeb;
+}
+.menuAccSet i {
+  font-size: 25px;
+}
+.menuAccSet span {
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 400;
+}
+.menuHelp {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.menuHelp:hover {
+  background-color: #ebebeb;
+}
+.menuHelp i {
+  font-size: 25px;
+}
+.menuHelp span {
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.menuSignout {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+.menuSignout:hover {
+  background-color: #ebebeb;
+  border-radius: 0px 0px 15px 15px;
+}
+.menuSignout i {
+  font-size: 25px;
+}
+.menuSignout span {
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.logout {
+  height: 65px;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-top: 15px;
+  border-style: solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-width: 1px;
+  border-color: #d1d1d1;
+  padding-bottom: 10px;
+}
+
+.outercontainer {
+  display: flex;
+}
+.filterBox {
+  width: 300px;
+}
+.productDetil {
+  width: calc(100% - 300px);
+}
+.proPic {
+  object-fit: contain;
+  height: 200px;
+}
+.statimg {
+  width: 300px;
+}
+.statfontz {
+  font-size: 24px;
+}
+
+.fontSize1 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fontSize2 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.fontSize3 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.updateBtn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-family: "Fredoka", sans-serif;
+  font-size: 16px;
+  background-color: #535353;
+  color: #fff;
+  cursor: pointer;
+}
+.updateBtn:hover {
+  background-color: #494949;
+}
+
+.sortDrop {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  right: 2px;
+  height: 45px;
+}
+
+.activeSlide {
+  width: 300px;
+  background-color: #f8f8f8;
+  position: absolute;
+  z-index: 12;
+  transition: 200ms;
+  pointer-events: all;
+}
+.filterBox2 {
+  width: 300px;
+  background-color: #f8f8f8;
+  position: absolute;
+  z-index: 12;
+  transition: 200ms;
+  margin-left: -300px;
+  pointer-events: none;
+}
+.dBack {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  pointer-events: none;
+  opacity: 0;
+  transition: 200ms;
+}
+.dBackShow {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  opacity: 0.4;
+  pointer-events: all;
+  transition: 200ms;
+}
+
+.filterBtn {
+  background-color: #ffffff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  border-color: rgb(196, 199, 199);
+}
+.filterBtn:hover {
+  background-color: #f5f5f5;
+}
+
+.bodyStuck {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+/*Top responsive link btn*/
+
+.link-des {
+  position: relative;
+  cursor: pointer;
+
+  border: none;
+  border-top-width: medium;
+  border-top-style: none;
+  border-top-color: currentcolor;
+  height: auto;
+  text-align: left;
+  border-top: none;
+  line-height: 1em;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 0.78571429rem 1.14285714rem !important;
+  font-size: 1rem;
+  text-transform: none;
+  font-weight: 400;
+  box-shadow: none;
+  -webkit-touch-callout: none;
+}
+.link-des:hover {
+  background-color: rgb(248, 248, 248);
+}
+.o1 {
+  display: none;
+}
+.o2 {
+  display: none;
+}
+.o3 {
+  display: none;
+}
+.o4 {
+  display: none;
+}
+.ss {
+  display: none;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+/* Wish Box */
+.wishProduct {
+  display: flex;
+  border: solid;
+  border-color: #eceeee;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-width: 1px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.wishProduct:first-child {
+  border-top: none;
+}
+.wishtop {
+  padding: 25px;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 10px;
+  border: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-width: 1px;
+  border-color: rgb(224, 231, 237);
+}
+
+.wishtoptxt1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.wishtoptxt2 {
+  font-size: 22px;
+  font-family: "Nunito", sans-serif;
+}
+.wishContent {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.wishImgBox {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+.wishImg {
+  width: 160px;
+  object-fit: contain;
+}
+
+.wishdetails {
+  display: flex;
+  width: calc(100% - 210px);
+}
+.wishProdDetail {
+  width: 60%;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+.specBox {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.f1 {
+  display: block;
+  margin-bottom: 8px;
+  color: #7c8080;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+}
+
+.wishProdNm {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+.WishBtnBox {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.wishBtn {
+  width: 120px;
+  height: 40px;
+  border: none;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.wishbtn1:hover {
+  background-color: rgb(231, 14, 14);
+  color: white;
+}
+.wishbtn2:hover {
+  background-color: rgb(248, 186, 15);
+  color: white;
+}
+.disble{
+  color: rgb(161, 161, 161);
+  pointer-events: none;
+  background-color: #e4e4e498;
+}
+.btnBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.continueShop {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 18px;
+  background-color: #23b8b8;
+  color: white;
+  margin-top: 20px;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.continueShop:hover {
+  background-color: #16adad;
+}
+
+.tik {
+  background-color: rgb(243, 243, 243);
+  width: 40px;
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px 0 0 8px;
+}
+.tikchang {
+  background-color: rgb(240, 137, 69);
+  width: 40px;
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px 0 0 8px;
+}
+.tikCls {
+  background-color: rgb(250, 248, 248);
+  width: 40px;
+  display: flex;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+}
+
+.cls {
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(158, 158, 158);
+}
+.tikCls:hover {
+  background-color: rgb(252, 83, 83);
+  color: white;
+  .cls {
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.twoLineBlock {
+  overflow: hidden;
+  height: 28px;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+
+.twoLineBlock:before {
+  content: "";
+  float: left;
+  width: 5px;
+  height: 40px;
+}
+
+.twoLineBlock > *:first-child {
+  float: right;
+  width: 100%;
+  margin-left: -5px;
+}
+
+.twoLineBlock:after {
+  content: "\02026";
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  float: right;
+  position: relative;
+  top: -25px;
+  left: 100%;
+  width: 3em;
+  margin-left: -3em;
+  padding-right: 5px;
+  text-align: right;
+  background-size: 100% 100%;
+}
+.twoLineBlock2 {
+  overflow: hidden;
+  height: 60px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.twoLineBlock2:before {
+  content: "";
+  float: left;
+  width: 5px;
+  height: 40px;
+}
+
+.twoLineBlock2 > *:first-child {
+  float: right;
+  width: 100%;
+  margin-left: -5px;
+}
+
+.twoLineBlock2:after {
+  content: "\02026";
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  float: right;
+  position: relative;
+  top: -25px;
+  left: 100%;
+  width: 3em;
+  margin-left: -3em;
+  padding-right: 5px;
+  text-align: right;
+  background-size: 100% 100%;
+}
+
+@media screen and (max-width: 1030px) {
+  .topother {
+    display: none;
+  }
+  .o1 {
+    display: flex;
+  }
+  .ss {
+    display: flex;
+  }
+  .statimg {
+    width: 250px;
+  }
+  .statfontz {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wishtop {
+    padding: 25px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 10px;
+    border: solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-width: 1px;
+    border-color: rgb(224, 231, 237);
+  }
+
+  .wishtoptxt1 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .wishtoptxt2 {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+  }
+  .wishContent {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+  .wishImgBox {
+    width: 130px;
+    display: flex;
+    justify-content: center;
+  }
+  .wishImg {
+    width: 120px;
+    object-fit: contain;
+  }
+
+  .wishdetails {
+    display: flex;
+    width: calc(100% - 140px);
+  }
+
+  .wishProdDetail {
+    width: 60%;
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+  .specBox {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .f1 {
+    display: block;
+    margin-bottom: 8px;
+    color: #7c8080;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .wishProdNm {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+  }
+  .WishBtnBox {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .btnBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .wishBtn {
+    width: 110px;
+    height: 35px;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filterBox {
+    display: none;
+  }
+
+  .productDetil {
+    width: 100%;
+    background-color: #d1d1d1;
+  }
+  .filterBtn {
+    display: flex;
+  }
+  .statimg {
+    width: 200px;
+  }
+  .statfontz {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fontSize1 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .fontSize2 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .fontSize3 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .rightcon .icon2 {
+    display: none;
+  }
+  .o2 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .rightcon .icon1 {
+    display: none;
+  }
+  .o4 {
+    display: flex;
+  }
+}
+@media screen and (max-width: 392px) {
+  .fontSize1 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .fontSize2 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .fontSize3 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 642px) {
+  .selBtn {
+    display: none;
+  }
+}
+@media screen and (max-width: 730px) {
+  .o3 {
+    display: flex;
+  }
+  .directoryBox {
+    display: none;
+  }
+
+  .wishtop {
+    padding: 25px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 10px;
+    border: solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-width: 1px;
+    border-color: rgb(224, 231, 237);
+  }
+
+  .wishtoptxt1 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .wishtoptxt2 {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+  }
+  .wishContent {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+  }
+  .wishImgBox {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .wishImg {
+    width: 90px;
+    object-fit: contain;
+  }
+
+  .wishdetails {
+    display: flex;
+    width: calc(100% - 110px);
+  }
+
+  .wishProdDetail {
+    width: 60%;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .specBox {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .f1 {
+    display: block;
+    margin-bottom: 8px;
+    color: #7c8080;
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .wishProdNm {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+  }
+  .WishBtnBox {
+    width: 40%;
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .btnBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .wishBtn {
+    width: 90px;
+    height: 35px;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+
+  .continueShop {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 45px;
+    font-size: 16px;
+    background-color: #23b8b8;
+    color: white;
+    margin-top: 20px;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  }
+  .statimg {
+    width: 200px;
+  }
+  .statfontz {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .wishtop {
+    padding: 25px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 10px;
+    border: solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-width: 1px;
+    border-color: rgb(224, 231, 237);
+  }
+
+  .wishtoptxt1 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .wishtoptxt2 {
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+  }
+  .wishContent {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+  }
+  .wishImgBox {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .wishImg {
+    width: 90px;
+    object-fit: contain;
+  }
+
+  .wishdetails {
+    display: block;
+    width: calc(100% - 110px);
+  }
+
+  .wishProdDetail {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .specBox {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: block;
+  }
+  .twoLineBlock2 {
+    display: none;
+  }
+  .f1 {
+    display: block;
+    margin-bottom: 0px;
+    color: #7c8080;
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .wishProdNm {
+    font-size: 18px;
+    font-weight: 800;
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .WishBtnBox {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .padTop {
+    padding-left: 20px;
+    font-weight: 700;
+  }
+  .btnBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 200px;
+  }
+  .wishBtn {
+    width: 90px;
+    height: 35px;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+
+  .continueShop {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 45px;
+    font-size: 16px;
+    background-color: #23b8b8;
+    color: white;
+    margin-top: 20px;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .btnBox {
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .wishtop {
+    padding: 25px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 10px;
+    border: solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-width: 1px;
+    border-color: rgb(224, 231, 237);
+  }
+
+  .wishtoptxt1 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .wishtoptxt2 {
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+  }
+  .wishContent {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+  }
+  .wishImgBox {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  .wishImg {
+    width: 50px;
+    object-fit: contain;
+  }
+
+  .wishdetails {
+    display: block;
+    width: calc(100% - 130px);
+  }
+
+  .wishProdDetail {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .specBox {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: flex;
+  }
+  .f1 {
+    display: block;
+    margin-bottom: 0px;
+    color: #7c8080;
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+  }
+  .tik {
+    margin-right: 5px;
+    width: 30px;
+  }
+  .tikCls {
+    width: 30px;
+    margin-left: 5px;
+  }
+  .wishProdNm {
+    font-size: 18px;
+    font-weight: 800;
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .WishBtnBox {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .padTop {
+    padding-left: 20px;
+    font-weight: 700;
+  }
+  .btnBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 200px;
+  }
+  .wishBtn {
+    width: 90px;
+    height: 35px;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+
+  .continueShop {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 45px;
+    font-size: 16px;
+    background-color: #23b8b8;
+    color: white;
+    margin-top: 20px;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  }
+}
+
+/*fotter*/
+
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer hr.small {
+  margin: 20px 0;
+}
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.site-footer a {
+  color: #737373;
+}
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #737373;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links.inline li {
+  display: inline-block;
+}
+.site-footer .social-icons {
+  text-align: right;
+}
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+.copyright-text {
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+}
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+.social-icons a {
+  background-color: #33353d;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+
+.img-box {
+  height: 200px;
+}
+.result_box {
+  min-width: 220px;
+  border-style: solid;
+  border-color: rgb(153, 210, 228);
+  border-width: 1px;
+  border-top: none;
+  position: absolute;
+  z-index: 99;
+  margin-top: 40px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.result:last-child {
+  border-bottom: none;
+  border-radius: 0 0 6px 6px;
+}
+
+.result:first-child {
+  border-radius: 6px 6px 0 0;
+}
+
+.result {
+  width: auto;
+  height: 35px;
+  background-color: #ffffff;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  font-size: 16px;
+
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-width: 1px;
+  padding-left: 10px;
+  border-color: #f1f1f1;
+}
+.result:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.ellipsis {
+  text-overflow: ellipsis; /* enables ellipsis */
+  white-space: nowrap; /* keeps the text in a single line */
+  overflow: hidden; /* keeps the element from overflowing its parent */
+}

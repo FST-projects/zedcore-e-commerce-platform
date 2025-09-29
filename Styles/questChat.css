@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Fredoka", sans-serif;
+}
+.fred {
+  font-family: "Fredoka", sans-serif;
+}
+
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.searchInput {
+  border: none;
+  height: 40px;
+  border-radius: 15px;
+  padding-left: 15px;
+  font-family: "Fredoka", sans-serif;
+  width: 210px;
+  outline: none;
+}
+
+.searchboxcom {
+  display: flex;
+  align-items: center;
+}
+.searchboxcom i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.modeldescrip {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.chatBox {
+  margin-top: 20px;
+  min-width: 300px;
+  width: 450px;
+  height: 600px;
+  border-radius: 20px;
+  background-color: white;
+  position: relative;
+}
+
+.chatBox .head {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: rgb(201, 201, 201);
+}
+.cusList {
+  /* background-color: aqua; */
+  height: 520px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.cusCard {
+  /* background-color: rgb(33, 82, 65); */
+  width: 100%;
+  height: 70px;
+  /* background-color: aqua;  */
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(235, 235, 235);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+.cusCard:hover {
+  /* background-color: aliceblue; */
+}
+.cusImage {
+  width: 50px;
+  height: 50px;
+  /* background-color: antiquewhite; */
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.cusImage img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.cusDetails {
+  /* background-color: azure; */
+  display: flex;
+  flex-direction: column;
+  line-height: 22px;
+  margin-left: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 310px;
+}
+
+@media screen and (max-width: 576px) {
+  .chatBox {
+    min-width: 200px;
+    overflow-x: scroll;
+  }
+  .chatbackCenter {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .chatBox {
+    width: 500px;
+    overflow-x: scroll;
+  }
+  .chatbackCenter {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .chatBox {
+    width: 500px;
+    overflow-x: scroll;
+  }
+  .chatbackCenter {
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+}
+
+.chathead {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  /* background-color: aqua; */
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: rgb(206, 211, 214);
+  height: 60px;
+  position: relative;
+}
+.arrow {
+  font-size: 36px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.arrow:hover {
+  background-color: aliceblue;
+}
+.chatImg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.chatImg img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.ChatName {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.sendBtn {
+  background-color: rgb(41, 40, 40);
+  color: white;
+  height: 40px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 0px 0px 10px 0px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+}
+
+.inputArea {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+}
+.inputArea input {
+  width: calc(100% - 60px);
+  border-radius: 0px 0px 0px 10px;
+  border-width: 0.2px;
+  border: none;
+  font-size: 16px;
+  padding-left: 20px;
+  outline: none;
+  font-family: "Fredoka", sans-serif;
+}
+.sendMsgBox {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: end;
+}
+.duoBox {
+  display: block;
+  margin-top: 10px;
+  align-items: center;
+  align-content: center;
+  justify-content: end;
+}
+.sendMsg {
+  background-color: rgb(73, 68, 68);
+  width: 100%;
+  color: white;
+  height: fit-content;
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: 0px 0px 20px 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  word-wrap: break-word;
+}
+.inputMsg {
+  background-color: rgb(73, 68, 68);
+  width: 100%;
+  color: white;
+  height: fit-content;
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: 0px 0px 20px 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  word-wrap: break-word;
+  display: flex;
+}
+.inputMsg input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: rgb(73, 68, 68);
+  color: white;
+  font-family: "Fredoka", sans-serif;
+}
+.portsend {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: rgb(73, 68, 68);
+  border: none;
+  color: white;
+}
+.recMsgBox {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: start;
+}
+
+.recMsg {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+}
+
+.scrollBox {
+  overflow-y: scroll;
+  height: 540px;
+  padding-bottom: 20px;
+  background-color: rgb(215, 245, 240);
+  border-radius: 0px 0px 20px 20px;
+}
+
+.chatBoxPlacer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.noquest {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 24px;
+}
+.questNum {
+  position: absolute;
+  right: 30px;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}

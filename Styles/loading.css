@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap');
+
+.lds-ellipsis {
+    display: inline-block;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    z-index: 10000;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
+  .shade{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    position: fixed;
+    z-index: 9999;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   pointer-events: none;
+    
+    
+  }
+
+  .BodyscrollDis{
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .show1{
+ 
+    opacity: 0.5;
+    transition: 300ms;
+    pointer-events: all;
+  }
+  .show2{
+   
+    opacity: 1;
+    transition: 300ms;
+    pointer-events: all;
+  }
+  
+  .hide{
+    opacity: 0;
+    transition: 300ms;
+    pointer-events: none;
+  }
+  
+  .ok-show {
+    color: #046d5f;
+    background: #d3ffd6;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #8ce2ad;
+    display: flex;
+    font-family: 'Inria Sans', sans-serif;
+  }
+  .error-show {
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #f5c6cb;
+    display: flex;
+    font-family: 'Inria Sans', sans-serif;
+  }

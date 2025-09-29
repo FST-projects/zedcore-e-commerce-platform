@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Fredoka", sans-serif;
+}
+
+.fred {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Fredoka", sans-serif;
+}
+.addressBox {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  border-color: rgb(184, 184, 184);
+  padding: 10px;
+  border-width: 1px;
+  border-radius: 4px;
+}
+.address {
+  font-size: 17px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.address-btn {
+  margin-top: 20px;
+  height: 40px;
+  width: 170px;
+  background-color: #333;
+  border: none;
+  border-radius: 8px;
+
+  color: white;
+  font-family: "Fredoka", sans-serif;
+}
+
+.payBox {
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  display: flex;
+  width: 100%;
+  margin-bottom: 6px;
+}
+.placeOrder {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  font-family: "Fredoka", sans-serif;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+}

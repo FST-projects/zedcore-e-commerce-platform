@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+.outfit {
+  font-family: "Outfit", sans-serif;
+}
+.contactMainHolder {
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.contactImg {
+  background-color: beige;
+  width: 50%;
+  height: 400px;
+  display: flex;
+  border-radius: 20px 20px 20px 20px;
+}
+.contactImg img {
+  object-fit: cover;
+  display: flex;
+  width: 100%;
+  border-radius: 20px 0px 0px 20px;
+}
+.contactDetailBox {
+  width: 50%;
+
+  /* background-color: aqua; */
+}
+.contactText {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 120px;
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  line-height: 40px;
+}
+.contactBtnArea {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.ContactBtn {
+  height: 45px;
+  background-color: rgb(29, 29, 29);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Outfit", sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 770px) {
+  .contactMainHolder {
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+  }
+
+  .contactImg {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    /* border-radius: 20px 20px 20px 20px; */
+  }
+  .contactImg img {
+    object-fit: cover;
+    display: flex;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .contactDetailBox {
+    width: 100%;
+    padding-bottom: 80px;
+    /* background-color: aqua; */
+  }
+  .contactText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 120px;
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    line-height: 40px;
+  }
+  .contactBtnArea {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .ContactBtn {
+    height: 45px;
+    background-color: rgb(29, 29, 29);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: "Outfit", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.about-us {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 90px 0;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+
+}
+.pic {
+  height: auto;
+  width: 400px;
+  border-radius: 12px;
+}
+.about {
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+
+}
+.text {
+
+  font-family: "Poppins", sans-serif;
+
+}
+.text h2 {
+  color: #333;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+
+}
+.text h5 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+
+}
+span {
+  color: #4070f4;
+}
+.text p {
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+
+}
+.data {
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+
+}
+.hire {
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+  font-family: "Poppins", sans-serif;
+
+}
+.hire:hover {
+  background: #000;
+}

@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Fredoka", sans-serif;
+}
+.fred {
+  font-family: "Fredoka", sans-serif;
+}
+
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.searchInput {
+  border: none;
+  height: 40px;
+  border-radius: 15px;
+  padding-left: 15px;
+  font-family: "Fredoka", sans-serif;
+  width: 210px;
+  outline: none;
+}
+
+.searchboxcom {
+  display: flex;
+  align-items: center;
+}
+.searchboxcom i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.modeldescrip {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.chatbackCenter {
+}
+
+.chatBox {
+  margin-top: 20px;
+  min-width: 300px;
+  width: 450px;
+  overflow-x: hidden;
+  height: 600px;
+  border-radius: 20px;
+  background-color: white;
+  position: relative;
+}
+
+.chatBox .head {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: rgb(201, 201, 201);
+}
+.cusList {
+  /* background-color: aqua; */
+  height: 520px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.cusCard {
+  /* background-color: rgb(33, 82, 65); */
+  width: 100%;
+  height: 70px;
+  /* background-color: aqua;  */
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(235, 235, 235);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+.cusCard:hover {
+  background-color: aliceblue;
+}
+.cusImage {
+  width: 50px;
+  height: 50px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.cusImage img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.cusDetails {
+  /* background-color: azure; */
+  display: flex;
+  flex-direction: column;
+  line-height: 22px;
+  margin-left: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 310px;
+}
+
+@media screen and (max-width: 576px) {
+  .chatBox {
+    width: 200px;
+  }
+  .chatbackCenter {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .chatBox {
+    width: 500px;
+  }
+  .chatbackCenter {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .chatBox {
+    width: 500px;
+  }
+  .chatbackCenter {
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+}
+
+.chathead {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  /* background-color: aqua; */
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: rgb(206, 211, 214);
+  height: 60px;
+  position: relative;
+}
+.arrow {
+  font-size: 36px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.arrow:hover {
+  background-color: aliceblue;
+}
+.chatImg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.chatImg img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.ChatName {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+.sendBtn {
+  background-color: rgb(41, 40, 40);
+  color: white;
+  height: 40px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 0px 0px 10px 0px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+}
+
+.inputArea {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+}
+.inputArea input {
+  width: calc(100% - 60px);
+  border-radius: 0px 0px 0px 10px;
+  border-width: 0.2px;
+  border: none;
+  font-size: 16px;
+  padding-left: 20px;
+  outline: none;
+  font-family: "Fredoka", sans-serif;
+}
+.sendMsgBox {
+  /* background-color: aqua; */
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  align-content: center;
+  justify-content: end;
+}
+
+.sendMsg {
+  background-color: rgb(73, 68, 68);
+  width: fit-content;
+  color: white;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 20px 20px 0px 20px;
+  margin-right: 10px;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+.recMsgBox {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  align-content: center;
+  justify-content: start;
+}
+
+.recMsg {
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 20px 20px 20px 0px;
+  position: relative;
+  margin-left: 10px;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+.scrollBox {
+  overflow-y: scroll;
+  height: 500px;
+  padding-bottom: 20px;
+  background-color: aliceblue;
+}
+
+.chatBoxPlacer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.noquest {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 24px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap");
+
+.lds-ellipsis {
+  display: inline-block;
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  z-index: 10000;
+  opacity: 0;
+  pointer-events: none;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+.shade {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.BodyscrollDis {
+  height: 100%;
+  overflow: hidden;
+}
+
+.show1 {
+  opacity: 0.5;
+  transition: 300ms;
+  pointer-events: all;
+}
+.show2 {
+  opacity: 1;
+  transition: 300ms;
+  pointer-events: all;
+}
+
+.hide2 {
+  opacity: 0;
+  transition: 300ms;
+  pointer-events: none;
+}
+
+.ok-show {
+  color: #046d5f;
+  background: #d3ffd6;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #8ce2ad;
+  display: flex;
+  font-family: "Inria Sans", sans-serif;
+}
+.error-show {
+  color: #721c24;
+  background: #f8d7da;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #f5c6cb;
+  display: flex;
+  font-family: "Inria Sans", sans-serif;
+}
+
+.profileImg img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.datetime {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border: solid;
+  border-width: 1px;
+  border-color: #d8d8d8;
+}
+
+.checkbox-wrapper-2 .ikxBAC {
+  appearance: none;
+  background-color: #dfe1e4;
+  border-radius: 72px;
+  border-style: none;
+  flex-shrink: 0;
+  height: 20px;
+  margin: 0;
+  position: relative;
+  width: 30px;
+}
+
+.checkbox-wrapper-2 .ikxBAC::before {
+  bottom: -6px;
+  content: "";
+  left: -6px;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+}
+
+.checkbox-wrapper-2 .ikxBAC,
+.checkbox-wrapper-2 .ikxBAC::after {
+  transition: all 100ms ease-out;
+}
+
+.checkbox-wrapper-2 .ikxBAC::after {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 14px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 14px;
+}
+
+.checkbox-wrapper-2 input[type="checkbox"] {
+  cursor: default;
+}
+
+.checkbox-wrapper-2 .ikxBAC:hover {
+  background-color: #c9cbcd;
+  transition-duration: 0s;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked {
+  background-color: #6e79d6;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked::after {
+  background-color: #fff;
+  left: 13px;
+}
+
+.checkbox-wrapper-2 :focus:not(.focus-visible) {
+  outline: 0;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked:hover {
+  background-color: #535db3;
+}
+
+.togglebtnseller {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.togglebtnseller label {
+  font-size: 16px;
+}
+
+.homePreviewBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  position: relative;
+  overflow-y: scroll;
+}
+.homePreview {
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.categoryChart {
+  height: 500px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 10px;
+}
+.nochart {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  background-color: #ffffffba;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 10px;
+}
