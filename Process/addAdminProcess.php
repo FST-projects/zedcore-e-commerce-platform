@@ -78,12 +78,12 @@ if (isset($_SESSION["admin"])) {
                     $mail->isSMTP();
                     $mail->Host = 'smtp.gmail.com';
                     $mail->SMTPAuth = true;
-                    $mail->Username = 'dsbamarasinghe1234@gmail.com';
-                    $mail->Password = 'mqwamembfugzhknt';
+                    $mail->Username = 'youremail@gmail.com';
+                    $mail->Password = 'secretkey';
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
                     $mail->Port = 465;
 
-                    $mail->setFrom('dsbamarasinghe1234@gmail.com', 'Forgot password');
+                    $mail->setFrom('youremail@gmail.com', 'Forgot password');
                     $mail->addAddress($email);
 
                     $mail->isHTML(true);
