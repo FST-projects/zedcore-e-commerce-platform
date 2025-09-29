@@ -41,9 +41,9 @@ if (isset($_SESSION["u"])) {
 
             $array;
 
-            $merchant_id = "1224759";
-            $merchant_secret = "MzE0MzYyMjQ3ODMzNTQxMTMyNjgyODg2ODcxNDk2MzkyNjY2ODEwOA==";
-            $currency = "LKR";
+            $merchant_id = "merchantId";
+            $merchant_secret = "secretkey";
+            $currency = "currency";
 
             $hash = strtoupper(
                 md5(

@@ -62,7 +62,7 @@ function payhereload() {
           order_id: obj["id"],
           items: obj["item"],
           amount: amount + ".00",
-          currency: "LKR",
+          currency: "currency",
           hash: obj["hash"], // *Replace with generated hash retrieved from backend
           first_name: obj["fname"],
           last_name: obj["lname"],
@@ -70,10 +70,10 @@ function payhereload() {
           phone: obj["mobile"],
           address: obj["address"],
           city: obj["city"],
-          country: "Sri Lanka",
+          country: "country",
           delivery_address: obj["address"],
           delivery_city: obj["city"],
-          delivery_country: "Sri Lanka",
+          delivery_country: "country",
           custom_1: "",
           custom_2: "",
         };
